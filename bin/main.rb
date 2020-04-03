@@ -1,4 +1,18 @@
 #!/usr/bin/env ruby
+def print_board(board)
+  # board_printer = (board.nil? ? (1..9).to_a : board)
+  board.each_with_index do |board_item, index|
+    print board_item
+    ((index + 1) % 3).zero? ? puts('') : print('|')
+  end
+end
+
+def register_move(board, player, position)
+  return false if !position.between?(1, 9) || board[position - 1] != ' '
+
+  board[position - 1] = (player.zero? ? 'x' : 'o')
+  true
+end
 
 puts '========~*~*~*~*~*~*~ TicTacToe ~*~*~*~*~*~*~========'
 
