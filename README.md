@@ -1,6 +1,6 @@
 # Tic-tac-toe
 
-> This projects implements the tic-tac-toe game.
+> This projects implements the tic-tac-toe game in ruby. Playable through terminal.
 
 Tic-tac-toe, or Xs and Os is a paper-and-pencil game for two players. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 [Tic-tac-toe - Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
@@ -20,13 +20,13 @@ Tic-tac-toe, or Xs and Os is a paper-and-pencil game for two players. The player
 
 ### Usage
 - Navigate to the project folder.
-- Run the following command on your terminal
+- Run the following command on terminal
    ```
    $ ./bin/main.rb
    ```
 
 #### How to play
-- You will be promted to put the players names
+- After runing the game, you will be promted to put the players names
 
    ```
    ========~*~*~*~*~*~*~ TicTacToe ~*~*~*~*~*~*~========```
@@ -44,7 +44,7 @@ Tic-tac-toe, or Xs and Os is a paper-and-pencil game for two players. The player
     | |x
     |o| 
    ```
-- If there is a winner the game will tell who won, otherwise it will tell "It was a draw".
+- If there is a winner, the game will show who won. Otherwise it displays "It was a draw". In both cases, the games reaches its end.
 
 ## Authors
 
