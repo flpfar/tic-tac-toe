@@ -17,8 +17,9 @@ class Board
   def show_board
     show = ''
     @board.each_with_index do |board_item, index|
-      show += board_item
-      show += ((index + 1) % 3).zero? ? "\n" : '|'
+      show += '=========' if (index + 1) % 3 == 1
+      show += ' ' + board_item + ' '
+      show += ((index + 1) % 3).zero? ? "=========\n" : '|'
     end
     show
   end
