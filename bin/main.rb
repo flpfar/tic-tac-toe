@@ -6,17 +6,17 @@ require_relative '../lib/boardformatter.rb'
 require_relative '../lib/string.rb'
 
 def start_game(board)
-  puts "Welcome, #{board.players[0]} and #{board.players[1]}!"
+  puts "#{'Welcome'.green}, #{board.players[0]} and #{board.players[1]}!"
   puts "To make a move, enter a position according to the following board map: \n"
   print BoardFormatter.format_with_color(board.board, true)
   puts 'Game Started!'.green
 end
 
 def input_move(board, current_player)
-  print "\nPlayer #{board.players[current_player]} turn. Choose position: "
+  print "\nPlayer " + board.players[current_player].green + ' turn. Choose position: '
   print 'Invalid move, try again: ' until board.register_move(current_player, gets.chomp.to_i)
 end
-
+system 'clear'
 puts '========~*~*~*~*~*~*~ TicTacToe ~*~*~*~*~*~*~========'.reverse_color
 
 print 'Enter player 1 name: '
@@ -35,6 +35,7 @@ round = 0
 while !has_winner && round < 9
   current_player = round % 2
   input_move(board, current_player)
+  system 'clear'
   print BoardFormatter.format_with_color(board.board)
   has_winner = BoardChecker.winner?(board.board)
   round += 1
