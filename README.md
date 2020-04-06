@@ -13,7 +13,7 @@ Tic-tac-toe, or Xs and Os is a paper-and-pencil game for two players. The player
 ## Getting started
 
 ### Prerequisites
-- To run this project, you must have Ruby installed in your computer.
+- To run this project, you must have Ruby installed (you can get it [here](https://www.ruby-lang.org/pt/documentation/installation/)).
 
 ### Setup
 - Clone this repository to your local machine or download the files.
