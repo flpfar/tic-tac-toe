@@ -6,9 +6,7 @@ require './lib/boardchecker.rb'
 def start_game(board)
   puts "Welcome, #{board.players[0]} and #{board.players[1]}!"
   puts "To make a move, enter a position according to the following board map. \n"
-  puts '=========   1 | 2 | 3  ========='
-  puts '=========   4 | 5 | 6  ========='
-  puts '=========   7 | 8 | 9  ========='
+  print BoardFormatter.format_with_colors(board.board, true)
   puts '========= Game Started ========='
 end
 
@@ -37,7 +35,7 @@ round = 0
 until has_winner || round >= 9
   current_player = round % 2
   input_move(board, current_player)
-  print board.show_board
+  print BoardFormatter.format_with_colors(board.board)
   has_winner = BoardChecker.winner?(board.board)
   round += 1
 end
