@@ -34,17 +34,18 @@ Tic-tac-toe, or Xs and Os is a paper-and-pencil game for two players. The player
    ``` 
 - To make a move, enter a position according to the following board map. 
    ```
-   =========   1 | 2 | 3  =========
-   =========   4 | 5 | 6  =========
-   =========   7 | 8 | 9  =========
+   ========= 1 | 2 | 3 =========
+   ========= 4 | 5 | 6 =========
+   ========= 7 | 8 | 9 =========
    ```
 - For example, if "Player 1" chose position 6 and "Player 2" chose position 8 the board will look like this: 
    ```
-   =========   |   |   =========
-   =========   |   | x =========
-   =========   | o |   =========
+   ======= Current Board =======
+   ========= 1 | 2 | 3 =========
+   ========= 4 | 5 | x =========
+   ========= 7 | o | 9 =========
    ```
-- If there is a winner, the game will show who won. Otherwise it displays "It was a draw". In both cases, the games reaches its end.
+- If there is a winner, the game will show who won. Otherwise it displays "It's a draw!". In both cases, the games reaches its end.
 
 ## Authors
 
