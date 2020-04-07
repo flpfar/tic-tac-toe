@@ -18,9 +18,15 @@ describe Board do
       expect(board.register_move(0, 10)).to be false
     end
 
-    it 'returns false when the position of the board is already filled' do
+    it "doesn't return true if the position of the board is already filled" do
       board.register_move(0, 1)
-      expect(board.register_move(1, 1)).to be false
+      expect(board.register_move(1, 1)).not_to be true
+    end
+
+    it "doesn't register the move when the position of the board is already filled" do
+      board.register_move(0, 5)
+      board.register_move(1, 5)
+      expect(board.board).not_to eq([1, 2, 3, 4, 'o', 6, 7, 8, 9])
     end
 
     it 'it returns true if the move is valid' do
