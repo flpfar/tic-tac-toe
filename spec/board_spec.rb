@@ -5,7 +5,6 @@ describe Board do
 
   context 'when creating a new board' do
     it 'creates a board with two players' do
-      expect(board).to be_a(Board)
       expect(board.players).to eq(0 => 'Player1', 1 => 'Player2')
     end
 
