@@ -13,11 +13,11 @@ class BoardFormatter
     show
   end
 
-  def self.format(board, first_time = false)
+  def self.format_simple(board, first_time = false)
     show = first_time ? "\n" : "\n======= Current Board =======\n"
     board.each_with_index do |board_item, index|
       show += '=========' if (index + 1) % 3 == 1
-      show += board_item.is_a?(String) ? " #{board_item} " : ' '
+      show += " #{board_item} "
       show += ((index + 1) % 3).zero? ? "=========\n" : '|'
     end
     show += "\n"
