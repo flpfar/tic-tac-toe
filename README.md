@@ -1,19 +1,26 @@
 # Tic-tac-toe
 
-> This projects implements the tic-tac-toe game in ruby. Playable through terminal.
+> This project implements the tic-tac-toe game in ruby, playable through terminal.
 
-Tic-tac-toe, or Xs and Os is a paper-and-pencil game for two players. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+![screenshot](/images/screenshot.png)
+
+Tic-tac-toe, or Xs and Os is a game for two players. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 [Tic-tac-toe - Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
 ## Built With
 
 - Ruby
 - Rubocop (linter)
+- RSpec
 
 ## Getting started
 
 ### Prerequisites
-- To run this project, you must have Ruby installed (you can get it [here](https://www.ruby-lang.org/pt/documentation/installation/)).
+- To run this project, you must have **Ruby** installed (you can get it [here](https://www.ruby-lang.org/pt/documentation/installation/)).
+- To test the methods you can install **RSpec**
+   ```
+   $ gem install rspec
+   ```
 
 ### Setup
 - Clone this repository to your local machine or download the files.
@@ -23,6 +30,10 @@ Tic-tac-toe, or Xs and Os is a paper-and-pencil game for two players. The player
 - Run the following command on terminal
    ```
    $ ./bin/main.rb
+   ```
+- To test the methods created here, you can use the following command.
+   ```
+   $ rspec --format documentation
    ```
 
 #### How to play
@@ -58,7 +69,7 @@ Tic-tac-toe, or Xs and Os is a paper-and-pencil game for two players. The player
 👤 **Franco Rosa**
 
 - Github: [@FrancoRosa](https://github.com/FrancoRosa)
-- Linkedin: [linkedin](https://www.linkedin.com/in/franco-rosa-79972119b)
+- Linkedin: [Franco Rosa](https://www.linkedin.com/in/franco-rosa-79972119b)
 
 ## 🤝 Contributing
 
